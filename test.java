@@ -71,3 +71,23 @@ public class Test {
      }
  
 }
+
+
+//------
+
+List<String> list = new ArrayList<>();
+        list.add(null);
+        list.add(null);
+        list.add(null);
+        System.out.println(list.remove(0) + ":" + list.remove(null));
+
+//-----
+
+List<StringBuilder> days = new ArrayList<>();
+         days.add(new StringBuilder("Sunday"));
+         days.add(new StringBuilder("Monday"));
+         days.add(new StringBuilder("Tuesday"));
+ 
+         if(days.contains(new StringBuilder("Sunday"))) {
+             days.add(new StringBuilder("Wednesday"));
+         }
